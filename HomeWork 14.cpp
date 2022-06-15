@@ -1,11 +1,13 @@
 ﻿#include <iostream>
 #include <windows.h>
 
+
 void color(int text, int background)
 {
 	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(h, (WORD)((background << 4) | text));
 }
+
 
 int main()
 {
